@@ -1,0 +1,65 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,500;1,600&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+li,a {
+    text-decoration: none;
+    list-style: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.container{
+    height: 100vh;
+    width: 100vw;
+    background-color: #f1e9d7;
+
+}
+.header{
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 3rem;
+    align-items: center;
+    position: relative;
+    /* position: fixed; */
+}
+.logo{
+    margin: 1rem;
+    align-items: center;
+    font-size: 1.8em;
+}
+.logo h2{
+/* color: transparent; */
+font-weight: 600;
+}
+.nevbar{
+    /* border: 1px solid black; */
+    list-style: none;
+    
+}
+.nevbar-ul{
+    /* border:  1px solid black; */
+    display: flex;
+    gap: 6rem;
+    
+    
+} 
+.nevbar-ul li {
+    display: inline-block;
+    /* border:  1px solid black; */
+}
+.nevbar-ul li a{
+    color: black;
+
+}
+.nevbar-ul li a:hover{
+color: black
+}
+
+.gitimg{
+    width: 30px;
+}
