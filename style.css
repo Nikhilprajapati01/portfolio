@@ -4,6 +4,7 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    font-family: "montserral";
 }
 li,a {
     text-decoration: none;
@@ -16,6 +17,7 @@ li,a {
     height: 100vh;
     width: 100vw;
     background-color: #f1e9d7;
+    overflow: hidden;
 
 }
 .header{
@@ -28,14 +30,22 @@ li,a {
     /* position: fixed; */
 }
 .logo{
+    width: 10rem;
     margin: 1rem;
-    align-items: center;
-    font-size: 1.8em;
+    /* border: 2px solid black; */
 }
-.logo h2{
-/* color: transparent; */
-font-weight: 600;
-}
+
+.logo span{
+    font-size: 3rem;
+    letter-spacing: normal;
+} 
+
+/* .logo h2{
+    /* color: transparent; */
+    /* width: 3rem;
+    font-size: 3rem;
+     font-weight: 600;
+} */ 
 .nevbar{
     /* border: 1px solid black; */
     list-style: none;
@@ -57,9 +67,88 @@ font-weight: 600;
 
 }
 .nevbar-ul li a:hover{
-color: black
+     border-bottom: 2px solid black;
+}
+.img-menu{
+    width: 30px;
+    height: 20px;
+    font-weight: 500;
+    background-color: transparent;
+
+}
+.menu{
+  display: none;
 }
 
-.gitimg{
-    width: 30px;
+.nevbar_mobile{
+    width: 100vh;
+    position: relative;
+    /* border: 2px solid black; */
+}
+.nevbar-ul-short{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    /* background-color: aliceblue; */
+    width: 30vw;
+    gap: 1rem;
+    position: absolute;
+    left: 0rem;
+    right: 0rem;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+.nevbar-ul-short li a{
+    color: black;
+}
+.nevbar-ul-short li a:hover{
+    border-bottom:  2px solid black;
+}
+
+
+@media only  screen and  (max-width:850px){
+    .header{
+        padding: 0px 1rem;
+    }
+   .logo span{
+    font-size: 2rem;
+   }
+   .but-menu{
+       background: none;
+       border: none;
+       
+    }
+    .menu{
+        display: block;
+        width: 3vh;
+
+  }
+
+
+    .nevbar{
+        display: none;
+
+    }
+
+    .nevbar_mobile{
+        margin-top: 1rem;
+        width: 100vw;
+       
+    }
+    .nevbar-ul-short{
+        background-color: rgb(245, 226, 197);
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+        width: 50vw;
+  }
+
+}
+
+@media only  screen and  (min-width:850px){
+    .nevbar-ul-short{
+          display: none;
+          background-color: rgb(75, 49, 11);
+          width: 20vw;
+          border: 2px solid black;
+    }
 }

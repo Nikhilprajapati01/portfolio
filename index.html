@@ -5,24 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>portfolio website</title>
     <link rel="stylesheet" href="style.css">
+    <script>
+        function opennevbar_mobile(){
+            const nevbar_mobile =document.querySelector("nevbar_mobile");
+            nevbar_mobile.classList.toggle("isActive");
+        }
+    </script>
 </head>
 <body>
     <div class="container">
         <div class="header">
             <div class="logo">
-                <h2>Nikhil</h2>
+                <span>Nikhil</span>
             </div>
             <div class="nevbar">
                 <ul class="nevbar-ul">
-                    <li><a href="#">project</a></li>
+                    <li><a href="#">Project</a></li>
                     <li><a href="#">Skills</a></li>
                     <li><a href="#">About me</a></li>
                 </ul>
             </div>
             <div class="icons">
-             <img src="github.png" alt="" class="gitimg">
-                
+                <button class="but-menu" onclick="opennevbar_mobile"><img src="menu (1).png" alt="" class="menu"></button>
             </div>
+        </div>
+        <div class="nevbar_mobile">
+            <ul class="nevbar-ul-short">
+                <li><a href="#">project</a></li>
+                <li><a href="#">Skills</a></li>
+                <li><a href="#">About me</a></li>
+            </ul>
         </div>
     </div>
 </body>
