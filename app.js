@@ -6,10 +6,10 @@ let display = 0;
 function toggldiv (){
 
    if(display === 1){
-        div.style.visibility = "hidden";
+        div.style.visibility = "visible";
         display = 0;
    }else{
-    div.style.visibility = 'visible'
+    div.style.visibility = 'hidden'
       display = 1;
    }
 
