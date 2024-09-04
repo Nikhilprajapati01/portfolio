@@ -1,28 +1,34 @@
 const btn = document.querySelector('.icons')
 let div = document.querySelector(".nevbarmenu")
 let active = document.querySelector(".active")
-let display = 0;
+let display = true;
 
 function toggldiv (){
 
-   if(display === 1){
+   if(display === true){
         div.style.visibility = "visible";
-        display = 0;
+        display = false;
    }else{
     div.style.visibility = 'hidden'
-      display = 1;
+      display = true;
    }
-
-
+   
     
 }
 
     
+// function hide (){
+//    div.style.visibility = 'hidden'
+// }
 
 
 btn.addEventListener("click", () => {
-    console.log("hi");
     
    toggldiv()
     
 })
+
+div.addEventListener('click', () => {
+   div.style.visibility = 'hidden';
+   display = true
+});

@@ -15,18 +15,18 @@
 </head>
 
 <body>
-    <section>
+    <section id="Home-main">
         <div class="container">
             <div class="header">
                 <div class="logo">
                     <span>Nikhil</span>
                 </div>
                 <div class="nevbar">
-                    <a href="#">Home</a>
-                    <a href="#">About me</a>
-                    <a href="#">Project</a>
-                    <a href="#">Education</a>
-                    <a href="#">Contact</a>
+                    <a href="#Home-main">Home</a>
+                    <a href="#skillsshow">About me</a>
+                    <a href="#projects">Project</a>
+                    <a href="#education">Education</a>
+                    <a href="#contact">Contact</a>
                 </div>
                 <div class="icons">
                     <i class="fa-solid fa-bars"></i>
@@ -34,11 +34,11 @@
 
             </div>
             <div class="nevbarmenu">
-                <a href="#">Home</a>
-                <a href="#">About me</a>
-                <a href="#">Project</a>
-                <a href="#">Skill</a>
-                <a href="#">Contact</a>
+                <a href="#Home-main">Home</a>
+                <a href="#skillsshow">About me</a>
+                <a href="#projects">Project</a>
+                <a href="#education">Skill</a>
+                <a href="#contact">Contact</a>
             </div>
 
             <div class="home">
@@ -55,9 +55,9 @@
                         <button class="cv"><a href=""></i>Download-cv</a></button>
                     </div>
                     <div class="media-icons">
-                        <a href="" target="_blank"><i class="fa-brands fa-instagram" id="svg1"></i></a>
-                        <a href="" target="_blank"><i class="fa-brands fa-linkedin" id="svg2"></i></a>
-                        <a href="" target="_blank"><i class="fa-brands fa-github" id="svg3"></i></a>
+                        <a href="https://www.instagram.com/prajapat__nikhil_/" target="_blank"><i class="fa-brands fa-instagram" id="svg1"></i></a>
+                        <a href="https://www.linkedin.com/feed/" target="_blank"><i class="fa-brands fa-linkedin" id="svg2"></i></a>
+                        <a href="https://github.com/Nikhilprajapati01" target="_blank"><i class="fa-brands fa-github" id="svg3"></i></a>
 
 
 
@@ -71,63 +71,34 @@
         </div>
     </section>
 
-    <section class="mainabout">
-        <div class="aboutme">
-            <h2 class="textabout">About me</h2>
-            <div class="tempcontent">
-                <div class="intro">
-                    <h2>My introduction</h2>
-                    <p>I am well-versed in HTML, CSS and JavaScript , and other cutting edge frameworks and
-                        libraries,which allows me to implement interactive features. Additionally, I have experirence
-                        working with content management systems (CMS) like WordPress.</p>
-                    <a href="">Download-cv</a>
-                </div>
-                <div class="skill">
-                    <div class="skillbox">
-                        <div class="skillheading">
-                            <h3>Frontend</h3>
-                        </div>
-                        <div class="skilllanguage">
-                            <ul>
-                                <li><span>HTML</span></li>
-                                <li><span>CSS</span></li>
-                                <li><span>JavaScript</span></li>
-                                <li><span>React </span></li>
-                                <li><span>Tailwind</span></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="skillbox">
-                        <div class="skillheading">
-                            <h3>Backend</h3>
-                        </div>
-                        <div class="skilllanguage">
-                            <ul>
-                                <li><span>Nojs</span></li>
-                                <li><span>Express js</span></li>
+    
 
-                            </ul>
-                        </div>
-                    </div>
 
-                    <div class="skillbox">
-                        <div class="skillheading">
-                            <h3>Database</h3>
-                        </div>
-                        <div class="skilllanguage">
-                            <ul>
-                                <li><span>Sql</span></li>
-                                <li><span>Mongo db</span></li>
-
-                            </ul>
-                        </div>
-                    </div>
-                </div>
+    <section class="skills-section" id="skillsshow">
+        <h2>My Skills</h2>
+        <div class="skills-container">
+            <div class="skill">
+                <img src="./images/html-5.png" alt="HTML Icon">
+                <h3>HTML</h3>
             </div>
+            <div class="skill">
+                <img src="./images/css-3.png "alt="CSS Icon">
+                <h3>CSS</h3>
+            </div>
+            <div class="skill">
+                <img src="./images/java-script.png " alt="JavaScript Icon">
+                <h3>JavaScript</h3>
+            </div>
+            <div class="skill">
+                <img src="./images/science.png" alt="React Icon">
+                <h3>React</h3>
+            </div>
+            <!-- Add more skills as needed -->
         </div>
     </section>
 
-    <section class="project-main">
+
+    <section class="project-main" id="projects">
         <div class="heading">
             <h3>my projects</h3>
         </div>
@@ -158,7 +129,7 @@
                      <div class="card-back">
                          <h3 class="project-title">Weather app</h3>
                          <p class="project-description">A brief description of your project. Explain what the project is.</p>
-                         <a href="your-project-link.com" class="project-link">View Project</a>
+                         <a href="https://main--checkweatherapp01.netlify.app/" target="_blank" class="project-link">View Project</a>
                      </div>
                  </div>
              </div>
@@ -204,7 +175,7 @@
     </section>
 
 
-    <section class="contactme">
+    <section class="contactme" id="contact">
          <div class="contact">
             <h2> contacts </h2>
             <span><strong><i class="fa-regular fa-envelope"></i>     nkman2002@gmail.com</strong></span>
