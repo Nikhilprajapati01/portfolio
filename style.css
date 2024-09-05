@@ -211,65 +211,6 @@ body{
 
 
 
-  /* /////////////////////////////////////////// */
-/* .mainabout{
-    width: 100vw;
-    height: 100vh;
-   
-    background-color: #EFEFEF; 
-    padding: 4rem;
-    
-} */
-/* .aboutme{
-    height: 100%;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    gap: 4rem;
-} */
-/* .mainabout h2{
-    
-      font-size: 1.6rem;
-     text-align: center;
-} */
-/* .tempcontent{
-    width: 100%;
-    height: 100%;
-    display: flex;
- 
-    justify-content: center;
-    gap: 4rem;
-    align-items: center;
-    
-} */
-/* .intro{
-    width: 40%;
-    height: 80%;
-  
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-    justify-content: center;
-    align-items: center;
-    background-color: #fff; 
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-} */
-/* .intro p{
-    margin-left: 1rem;
-    margin-right: 10px;
-    text-align: center;
-    font-size: 1.2rem;
-}
-.intro a{
-    text-decoration: none;
-    font-size: 14px;
-    color: black;
-    padding: 1rem 1.1rem;
-    border: 2px solid white;
-    bordet-style: none;
-    font-size: 1.3rem;
-    
-} */
 /* ///////////////////////////////////////////////// */
 
 
@@ -588,15 +529,21 @@ body{
        border:  2px solid white;
        overflow-x: hidden;
     }
+    .logo span{
+         font-size: 35px;
+    }
     .icons{
-        width: 10%;
+        
         position: absolute;
-        right: 10%;
-        top: 25%;
+        right: 7%;
+        top: 23%;
         display: block;
         height: fit-content;
     }
 
+    .icons i{
+        font-size: 28px;
+    }
     
     .nevbarmenu{
         visibility: hidden;
@@ -606,7 +553,7 @@ body{
         align-items: center;
         gap: 2rem;
         width: 50%;
-        height: 90%;
+        height: 92vh;
         position: absolute;
         top: 8%;
         right: 0%;
@@ -754,6 +701,19 @@ body{
     margin-bottom: 30px;
     font-size: 30px;
 }
+.logo span{
+    font-size: 30px;
+}
+.icons{
+  
+   position: absolute;
+   right: 10%;
+   top: 25%;
+  
+}
+.icons i{
+    font-size: 25px;
+}
 }
 
 
@@ -829,7 +789,7 @@ body{
         margin-left: 10px;
     }
     .logo span{
-      font-size: 30px;
+      font-size: 25px;
     }
     .about p , h2,h3{
         font-size: 15px;
@@ -857,10 +817,15 @@ body{
     font-size: 15px;
   }
   .icons{
-    width: 10%;
+    
     position: absolute;
-    right: 10%;
-    top: 20%;
-  
+    right: 17%;
+    top: 30%;
+    
 }
+.icons i{
+    font-size: 20px;
+
+}
+
 }
