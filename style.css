@@ -10,47 +10,42 @@
     font-family: 'Poppins', sans-serif;
 }
 body{
-width: 100vw;
-height: 100vh;
-overflow-x: hidden;
-color: black;
-}
-
- /* home section  */
-
-.container{
-    height: 100vh;
-    width: 100vw;
+    width: 100%;
+    height: 100%;
     overflow-x: hidden;
-  
-    
-
+    color: black;
 }
-.header{
+
+.container {
+    height: 100vh;
+    width: 100%;
+    /* overflow-x: hidden; */
+}
+
+.header {
     width: 100%;
     height: 8%;
     display: flex;
-    /* gap: 8rem */
     justify-content: space-evenly;
-    /* padding: 0px 1rem; */
     align-items: center;
     background-color: rgb(6,57,112);
     color: white;
-    position: relative;
-    overflow: hidden;
     position: fixed;
     z-index: 100;
-  
-    
+    overflow: hidden;
 }
 
 .logo{
-    width: 10rem;
+        max-width: 100%;
+        height: auto;
+    
 }
 
 .logo span{
     font-size: 3rem;
     letter-spacing: normal;
+    
+    
 } 
 
 .nevbar{
@@ -99,6 +94,7 @@ color: black;
     justify-content: center;
     align-items: center;
     /* border: 2px solid white; */
+    position: relative;
     position: absolute;
     top: 8%;
     left: 0px;
@@ -153,7 +149,7 @@ color: black;
 }
 .hire a , .cv a{
     text-decoration: none;
-    font-size: 18px;
+    font-size: 15px;
     font-weight: 600;
     line-height: normal;
     color: #333;
@@ -270,30 +266,7 @@ color: black;
     color: black;
     padding: 1rem 1.1rem;
     border: 2px solid white;
-    border-radius: 34px;
-    background-color: aqua;
-} */
-/* .skill{
-    width: 50%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 1rem;
- 
-}
-.skillbox{
-    width: 50%;
-    height: 70%;
-  
-    text-align: center;
-}
-.skilllanguage ul {
-    margin-top: 2rem;
-}
-.skilllanguage ul li{
-    margin-top: 1rem;
-    list-style: none;
+    bordet-style: none;
     font-size: 1.3rem;
     
 } */
@@ -312,6 +285,7 @@ color: black;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin: 20px;
+    position: relative;
 }
 
 .skills-section h2 {
@@ -492,7 +466,7 @@ color: black;
 
 .education-container {
     display: flex;
-    height: 88%;
+    height: 100%;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
@@ -526,21 +500,20 @@ color: black;
 }
 
 .contactme{
-    height: 100vh;
-    width: 100vw;
-    position: relative;
-    position: relative;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
 
 }
 .contact{
     height: 50%;
     width: 60%;
     /* border: 2px solid black; */
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
    padding: 20px;
+   margin-bottom: 30px;
    display: flex;
    flex-direction: column;
    gap: 20px;
@@ -595,7 +568,10 @@ color: black;
     .image{
         margin-right: 4rem;
     }
-
+    .contactme{
+        margin-top: 30px;
+    margin-bottom: 10px;
+    }
 }
 
 @media (max-width:975px) {
@@ -613,9 +589,10 @@ color: black;
        overflow-x: hidden;
     }
     .icons{
+        width: 10%;
         position: absolute;
-        right: 5%;
-        top: 18px;
+        right: 10%;
+        top: 25%;
         display: block;
         height: fit-content;
     }
@@ -633,7 +610,7 @@ color: black;
         position: absolute;
         top: 8%;
         right: 0%;
-        border: 2px solid rgb(253, 249, 249);
+      
         z-index: 100;
         background-color: #b4d6fb;
         backdrop-filter: blur(30px);
@@ -683,7 +660,14 @@ color: black;
         width: 150px;
         height: 130px;
     }
-    
+    .skills-section{
+           
+        margin: 0px;
+         padding: 0px 0px;
+     }
+     .skills-container{
+        gap: 105px;
+    }
 
    
     .about{
@@ -722,7 +706,9 @@ color: black;
     .project-container{
         height: 87%;
         margin: 0px;
-        gap: 10px;
+        margin-left: 70px;
+        gap: 20px;
+        justify-content: flex-start;
     }
     .card-front{
         margin-top: 2px
@@ -744,12 +730,32 @@ color: black;
     }
     .contact{
         width: 90%;
+        padding: 0px;
+        margin-bottom: 30px;
+      
         
     }
     .contactme{
+        margin-top: 100px;
         height: 60%;
 }
+.project-container{
+    
+    gap: 70px;
+   margin-left: 0px;
+    justify-content: center;
 }
+.education-container{
+    height: 100%;
+}
+
+#education h2{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-size: 30px;
+}
+}
+
 
 @media (max-width:500px) {
     .home{
@@ -796,7 +802,7 @@ color: black;
        
         
         .project-main{
-            margin-top: 30px;
+            margin-top: s0px;
             height: fit-content;
         }
         .project-container{
@@ -810,4 +816,51 @@ color: black;
         .education-card{
             width: 70%;
         }
+      
+        .skills-container{
+            gap: 30px;
+        }
+        .nevbarmenu{
+            width: 100%;
+        }
     }
+@media (max-width:300px) {
+    .logo{
+        margin-left: 10px;
+    }
+    .logo span{
+      font-size: 30px;
+    }
+    .about p , h2,h3{
+        font-size: 15px;
+    }
+    .about{
+        margin-left: 0px;
+    }
+    .media{
+        height: 35px;
+    }
+    .hire a, .cv a{
+        font-size: 9px;
+    }
+    .contact{
+        padding: 10px;
+    }
+  .contact span{
+    font-size: 13px;
+  }
+  .contactme{
+    margin-top: 140px;
+
+  }
+  .education-card p ,h3{
+    font-size: 15px;
+  }
+  .icons{
+    width: 10%;
+    position: absolute;
+    right: 10%;
+    top: 20%;
+  
+}
+}
