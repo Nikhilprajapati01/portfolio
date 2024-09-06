@@ -13,7 +13,7 @@ function toggldiv (){
       display = true;
    }
    
-    
+   
 }
 
     
