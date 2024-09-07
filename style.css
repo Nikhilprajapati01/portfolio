@@ -553,9 +553,8 @@ display: flex;
         gap: 2rem;
         width: 50%;
         height: 94vh;
-        
         position: absolute;
-        top: 6%;
+        top: 7%;
         right: 0%;
        position: fixed;
         z-index: 100;
@@ -669,10 +668,23 @@ display: flex;
 @media (max-width:600px) {
     .header{
         gap: 0px
-      };
+      }
+      .nav{
+        height: 8%;
+      }
+
+
+      .nevbarmenu{
+        width: 100%;
+        height: 95vh;
+        
+        top: 37px;
+        right: 0%;
+       
+    }
     .container{
        
-        gap:6rem;
+        gap:20px;
         
     }
     .image {
@@ -686,7 +698,8 @@ display: flex;
     font-size: 15px;
    }
     .education-card{
-        width: 400px;
+        /* width: 400px; */
+        width: 70%;
     }
     .contact{
         width: 90%;
@@ -703,10 +716,12 @@ display: flex;
     display: grid;
     grid-template-columns: auto auto ;
    height: 60%;
-   margin-top: 20%;
+  
+   gap: 30px;
+   /* margin-top: 20%; */
 }
 .project-container{
-    
+    height: 87%;
     gap: 70px;
    margin-left: 0px;
     justify-content: center;
@@ -733,16 +748,10 @@ display: flex;
 .icons i{
     font-size: 25px;
 }
-}
 
-
-@media (max-width:500px) {
     
   
-    .nevbarmenu{
-        width: 100%;
-       
-    }
+   
     .icons{
         display: block;
        
@@ -774,40 +783,37 @@ display: flex;
             margin-top: 0px;
             height: fit-content;
         }
-        .project-container{
-            height: 87%;
-        }
+        
         .project-card{
             width: 250px;
             height: 250px;
             margin-bottom: 20px;
         }
-        .education-card{
-            width: 70%;
-        }
-      
-        .skills-container{
-            gap: 30px;
-        }
-        .nevbarmenu{
-            width: 100%;
-        }
+       
+        
+        
     }
 @media (max-width:400px) {
     .nav{
         width: 100%;
+        height:fit-content;
     }
     .header{
       gap: 0px
     };
     
+    .nevbarmenu{   
+        top: 3%;
+        right: 0%;
+       
+    }
     
     .logo span{
       font-size: 25px;
     }
     .container{
-       
-        gap:4rem;
+        gap:0rem;
+        justify-content: space-around;
         
     }
     .image {
@@ -815,10 +821,11 @@ display: flex;
         height: 150px;
     }
     .text{
+        margin-top: 10px;
         gap: 15px;
     }
    .text h4,p{
-    font-size: 16px;
+    font-size: 13px;
    }
    
     .media{
